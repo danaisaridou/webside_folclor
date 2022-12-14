@@ -1,0 +1,77 @@
+/* reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/*Navbar*/
+
+#navbar {
+  background-color: white;
+  display: block;
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;
+  padding: 5px 10px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: rgb(45, 45, 45);
+  display: block;
+  text-align: left;
+  font-size: 1.3em;
+  line-height: 1.6em;
+}
+
+#navbar ul li a:hover {
+  text-decoration: line-through;
+  text-decoration-thickness: 25px;
+  color: rgba(94, 4, 63, 0.852);
+}
+
+/* main section*/
+
+#moto h1 {
+  color: black;
+  font-size: 13em;
+  line-height: 1em;
+  text-align: right;
+  padding-top: 200px;
+}
+
+.img-slider {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 40px;
+  flex-grow: auto;
+  width: fit-content;
+}
+
+.text-moto {
+  color: rgb(94, 4, 63);
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  background-color: rgba(94, 4, 63, 0.852);
+  color: #fff;
+  padding: 30px;
+}
