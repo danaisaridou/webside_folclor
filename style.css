@@ -31,19 +31,26 @@ body {
   padding: 5px 10px;
 }
 
+#navbar ul li {
+  float: left;
+  padding: 20px;
+}
+
 #navbar ul li a {
   text-decoration: none;
   color: rgb(45, 45, 45);
   display: block;
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.6em;
   line-height: 1.6em;
+  font-weight: lighter;
 }
 
 #navbar ul li a:hover {
   text-decoration: line-through;
-  text-decoration-thickness: 25px;
-  color: rgba(94, 4, 63, 0.852);
+  text-decoration-thickness: 24px;
+  text-decoration-color: rgba(94, 4, 63, 0.838);
+  color: rgb(255, 255, 255);
 }
 
 /* main section*/
@@ -53,16 +60,25 @@ body {
   font-size: 13em;
   line-height: 1em;
   text-align: right;
-  padding-top: 200px;
+  padding: 100px 0;
 }
 
 .img-slider {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding-bottom: 40px;
-  flex-grow: auto;
-  width: fit-content;
 }
+
+/*.img-item {
+  width: 33%;
+}
+
+.img-item img {
+  max-width: 100%;
+  height: auto;
+}*/
 
 .text-moto {
   color: rgb(94, 4, 63);
