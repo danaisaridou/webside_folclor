@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(252, 239, 250);
 }
 
 /* Main Styling */
@@ -18,12 +19,12 @@ body {
   padding-top: 20px;
 }
 
-/*Navbar*/
-
-#navbar {
-  background-color: white;
-  display: block;
+.mega-container {
+  max-width: 1600px;
+  margin: auto;
 }
+
+/*Navbar*/
 
 #navbar ul {
   float: right;
@@ -58,9 +59,17 @@ body {
 #moto h1 {
   color: black;
   font-size: 13em;
-  line-height: 1em;
+  line-height: 1.1em;
   text-align: right;
   padding: 100px 0;
+}
+
+#moto h3 {
+  color: black;
+  font-size: 8em;
+  line-height: 1.1;
+  text-align: left;
+  padding: 70px 0;
 }
 
 .img-slider {
@@ -68,7 +77,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
 /*.img-item {
@@ -80,14 +89,46 @@ body {
   height: auto;
 }*/
 
+.hub img {
+  width: 100%;
+  height: auto;
+  padding: 0 50px;
+}
+
 .text-moto {
   color: rgb(94, 4, 63);
 }
 
-/* footer */
-.footer {
+#paragraph {
+  color: rgb(94, 4, 63);
+  font-size: 1.9em;
+  font-weight: bold;
+  line-height: 1.6em;
+  padding: 40px 0;
+}
+
+.btn {
+  background-color: rgb(94, 4, 63);
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  color: white;
   text-align: center;
-  background-color: rgba(94, 4, 63, 0.852);
-  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 28px;
+}
+
+#button {
+  display: block;
+  float: center;
+}
+
+/* footer */
+.footer p {
+  text-align: center;
+  background: rgba(94, 4, 63, 0.852);
   padding: 30px;
+  color: white;
 }
