@@ -147,8 +147,9 @@ body {
   color: aliceblue;
 }
 
-#web_disign a {
+#web_disign h3 a {
   text-decoration: none;
+  color: aliceblue;
 }
 
 #company {
@@ -159,7 +160,16 @@ body {
   margin-left: 40px;
 }
 
+#social {
+  list-style: none;
+  color: rgb(45, 45, 45);
+  text-align: left;
+  margin-left: 40px;
+  color: aliceblue;
+}
+
 .footer p {
   color: aliceblue;
   padding: 20px;
+  text-align: center;
 }
