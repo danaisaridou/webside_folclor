@@ -1,8 +1,11 @@
 /* reset*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Main Styling */
@@ -114,14 +117,9 @@ body {
   color: white;
   text-align: center;
   display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  font-weight: bold;
   padding: 16px 28px;
-}
-
-#button {
-  display: block;
-  float: center;
 }
 
 /* footer */
@@ -147,7 +145,7 @@ body {
   color: aliceblue;
 }
 
-#web_disign h3 a {
+#web_design li h3 a {
   text-decoration: none;
   color: aliceblue;
 }
@@ -172,4 +170,220 @@ body {
   color: aliceblue;
   padding: 20px;
   text-align: center;
+}
+
+#slideshow {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  position: relative;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.slides {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  background-color: #ffffff00;
+  transition: 0.6s ease;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: #ffffff8d;
+}
+#play,
+#stop {
+  cursor: pointer;
+  position: relative;
+  margin: 60px auto;
+  padding: 16px;
+  color: rgb(59, 59, 59);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border: none;
+  width: 100px;
+  display: block;
+  border-radius: 10%;
+  background-color: #ecebebad;
+}
+
+#indicator {
+  text-align: center;
+}
+
+.thumbnail {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 20%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: all 0.6s ease-in-out;
+}
+
+.active,
+.thumbnail:hover {
+  background-color: #717171;
+  opacity: 1;
+}
+
+.thumb1 {
+  background: url("./photos/slideshow/graphic_1.jpg") no-repeat center
+    center/cover;
+}
+.thumb2 {
+  background: url("./photos/slideshow/graphic_2.jpg") no-repeat center
+    center/cover;
+}
+.thumb3 {
+  background: url("./photos/slideshow/graphic_3.jpg") no-repeat center
+    center/cover;
+}
+.thumb4 {
+  background: url("./photos/slideshow/graphic_4.jpg") no-repeat center
+    center/cover;
+}
+.thumb5 {
+  background: url("./photos/slideshow/graphic_5.jpg") no-repeat center
+    center/cover;
+}
+.thumb6 {
+  background: url("./photos/slideshow/graphic_6.jpg") no-repeat center
+    center/cover;
+}
+.thumb7 {
+  background: url("./photos/slideshow/graphic_7.jpg") no-repeat center
+    center/cover;
+}
+.thumb8 {
+  background: url("./photos/slideshow/graphic_8.jpg") no-repeat center
+    center/cover;
+}
+.thumb9 {
+  background: url("./photos/slideshow/graphic_9.jpg") no-repeat center
+    center/cover;
+}
+
+/* CONTACT FORM */
+
+/* .contact form {
+  display: flex;
+} */
+
+#lets_talk h1 {
+  font-size: 10em;
+  line-height: 1.1em;
+  text-align: right;
+  padding: 100px 0;
+}
+
+.container_contact {
+  margin-bottom: 100px;
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  background: rgb(248, 239, 246);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(146, 146, 146);
+}
+
+.container_contact header {
+  font-size: 1.6rem;
+  color: rgb(94, 4, 63);
+  font-weight: 500;
+  text-align: center;
+}
+
+.container_contact .form {
+  margin-top: 30px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #333;
+}
+
+.form :where(.input-box input, .input-box-message input) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.phone {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.message {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box-message input {
+  height: 200px;
+}
+
+.input-box-message label {
+  color: #333;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgba(128, 7, 86, 0.935);
+}
+.form button:hover {
+  background: rgb(94, 4, 63);
 }

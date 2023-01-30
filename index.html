@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="java.js" defer></script>
+    <script src="https://kit.fontawesome.com/e8c4ab9da1.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./logo/folclor_logo_png.png">
+
   </head>
 
   <body>
@@ -27,7 +31,7 @@
             <h2> <a href="stories.html">stories</a></h2>
           </li>
           <li>
-            <h2><a href="#">contact</a></h2>
+            <h2><a href="contact.html">contact</a></h2>
           </li>
         </div>
         </ul>
@@ -41,6 +45,40 @@
             </h1>
         </div>
     </section>
+
+<!--SLIDESHOW--> 
+<div class="content">
+  <div id="slideshow">
+    <img src="./photos/slideshow/graphic_1.jpg" class="slides" />
+    <img src="./photos/slideshow/graphic_2.jpg" class="slides" />
+    <img src="./photos/slideshow/graphic_3.jpg" class="slides" />
+    <img src="./photos/slideshow/graphic_4.jpg" class="slides" />
+    <img src="./photos/slideshow/graphic_5.jpg" class="slides" />
+    <img src="./photos/slideshow/graphic_6.jpg" class="slides" />
+    <img src="./photos/slideshow/graphic_7.jpg" class="slides" />
+    <img src="./photos/slideshow/graphic_8.jpg" class="slides" />
+    <img src="./photos/slideshow/graphic_9.jpg" class="slides" />
+
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+   
+  </div>
+</div>
+
+
+    <div id="indicator">
+      <span class="thumbnail thumb1" onclick="currentSlide(1)"></span> 
+      <span class="thumbnail thumb2" onclick="currentSlide(2)"></span> 
+      <span class="thumbnail thumb3" onclick="currentSlide(3)"></span> 
+      <span class="thumbnail thumb4" onclick="currentSlide(4)"></span> 
+      <span class="thumbnail thumb5" onclick="currentSlide(5)"></span> 
+      <span class="thumbnail thumb6" onclick="currentSlide(5)"></span> 
+      <span class="thumbnail thumb7" onclick="currentSlide(5)"></span> 
+      <span class="thumbnail thumb8" onclick="currentSlide(5)"></span> 
+      <span class="thumbnail thumb9" onclick="currentSlide(5)"></span> 
+    </div>
+    <button id="play" onclick="playSlide()"><i class="fa-solid fa-play"></i></button>
+    <button id="stop" onclick="stopSlide()"><i class="fa-solid fa-stop"></i></button>
 
     <section class="container">
         <div class="img-slider">
@@ -60,8 +98,8 @@
           <li><h2>DIGITAL DESIGN</h2></li>
           <li><h3><a href="#">ui/ux design</a></h3></li>
           <li><h3><a href="#">web design</a></h3></li>
-          <li><h3>corporate web design</h3></li>
-          <li><h3>landing pages</h3></li>
+          <li><h3><a href="#">corporate web design</a></h3></li>
+          <li><h3><a href="#">landing pages</a></h3></li>
         </ul>
         <ul id="company">
           <li><h2>COMPANY</h2></li>
