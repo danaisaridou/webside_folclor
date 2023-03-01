@@ -86,3 +86,68 @@ slides[0].style.display = "block";
 thumbnails[0].className += " active";
 
 playButton.style.display = "none";
+
+// CONTACT FORM //
+
+function validateForm() {
+  testName();
+  testEmail();
+  verifyEmail();
+  phone();
+  /*   testMessage(); */
+}
+
+function testName() {
+  let fullname = document.getElementById("name").value;
+
+  if (fullname == "") {
+    document.getElementById("nameError").innerHTML = "Please write your name";
+  } else {
+    document.getElementById(
+      "nameError"
+    ).innerHTML = `<i class="fa-solid fa-check"></i>`;
+  }
+}
+
+function testEmail() {
+  let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  let email = document.getElementById("email").value;
+  if (emailRegex.test(email)) {
+    document.getElementById(
+      "emailError"
+    ).innerHTML = `<i class="fa-solid fa-check"></i>`;
+  } else {
+    document.getElementById("emailError").innerHTML = "Please write your email";
+  }
+}
+
+function verifyEmail() {
+  let verifyemail = document.getElementById("verifyemail").value;
+  let email = document.getElementById("email").value;
+  if (verifyemail != "") {
+    if (verifyemail == email) {
+      document.getElementById(
+        "verifyError"
+      ).innerHTML = `<i class="fa-solid fa-check"></i>`;
+    } else {
+      document.getElementById("verifyError").innerHTML =
+        "Please write the same email";
+    }
+  } else {
+    document.getElementById("verifyError").innerHTML =
+      "Please write the same email";
+  }
+}
+
+function phone() {
+  let PhoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+  let phone = document.getElementById("phone").value;
+  if (PhoneRegex.test(phone)) {
+    document.getElementById(
+      "phoneError"
+    ).innerHTML = `<i class="fa-solid fa-check"></i>`;
+  } else {
+    document.getElementById("phoneError").innerHTML =
+      "Please write your phone number";
+  }
+}

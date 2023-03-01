@@ -6,81 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="./logo/folclor_logo_png.png">
-
+    <script src="java.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./logo/folclor_logo_png.png" />
+    <script
+      src="https://kit.fontawesome.com/e8c4ab9da1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-        <nav id="navbar">
-            <div class="container">
-              <a href="index.html"><img src="./logo/folclor_logo_png.png" alt="logo" width="60px"/></a>
-            <ul>
-              <li>
-                <h2><a href="index.html">home</a></h2>
-              </li>
-              <li>
-                <h2><a href="about.html">about</a></h2>
-              </li>
-              <li>
-                <h2><a href="#">work</a></h2>
-              </li>
-              <li>
-                <h2><a href="stories.html">stories</a></h2>
-              </li>
-              <li>
-                <h2><a class="current" href="contact.html">contact</a></h2>
-              </li>
-            </div>
-            </ul>
-          </nav>
+      <nav id="navbar">
+        <div class="container">
+          <a href="index.html"
+            ><img src="./logo/folclor_logo_png.png" alt="logo" width="60px"
+          /></a>
+          <ul>
+            <li>
+              <h2><a href="index.html">home</a></h2>
+            </li>
+            <li>
+              <h2><a href="about.html">about</a></h2>
+            </li>
+            <li>
+              <h2><a href="projects.html">projects</a></h2>
+            </li>
+            <li>
+              <h2><a href="stories.html">stories</a></h2>
+            </li>
+            <li>
+              <h2><a class="current" href="contact.html">contact</a></h2>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <div class="contact form">
-    <section id="lets_talk">
-        <div class="container">
-            <h1>
-                LET'S<span class="text-moto">TALK!</span>
-            </h1>
+    <div class="contact_form">
+      <div class="test">
+        <div id="lets_talk">
+          <h1>LET'S<span class="text-moto">TALK!</span></h1>
         </div>
-    </section>
-
-    <section class="container_contact">
-        <header>Fill the form and we will get back to you</header>
-        <form action="#" class="form">
+        <div class="container_contact">
+          <header>Fill the form and we will get back to you</header>
+          <form action="#" onsubmit="return validateForm()" class="form">
             <div class="input-box">
-            <label>Name</label>
-            <input type="text" placeholder="Write your name" required>
+              <label>Name</label>
+              <input type="text" id="name" placeholder="Write your name" />
+              <p id="nameError"></p>
             </div>
 
             <div class="input-box">
-                <label>Email Address</label>
-                <input type="text" placeholder="example@gmail.com" required>
+              <label>Email Address</label>
+              <input type="text" id="email" placeholder="example@gmail.com" />
+              <p id="emailError"></p>
             </div>
 
             <div class="input-box">
-                <label>Verify Email</label>
-                <input type="text" placeholder="example@gmail.com" required>
+              <label>Verify Email</label>
+              <input
+                type="text"
+                id="verifyemail"
+                placeholder="example@gmail.com"
+              />
+              <p id="verifyError"></p>
             </div>
 
             <div class="phone">
-                <div class="input-box">
-                    <label>Phone Number</label>
-                    <input type="number" placeholder="Enter your phone number" required>
-                </div>
+              <div class="input-box">
+                <label>Phone Number</label>
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                />
+                <p id="phoneError"></p>
+              </div>
             </div>
 
             <div class="message">
-                <div class="input-box-message">
+              <div class="input-box-message">
                 <label>Your message</label>
-                <input type="text" placeholder="Write your message here" required>
-                </div>
+                <input
+                  type="text"
+                  id="message"
+                  placeholder="Write your message here"
+                />
+              </div>
             </div>
-            <button>Send</button>
-        </form>
-    </section>
+            <input type="submit" class="buttonsend" value="Send" />
+          </form>
+        </div>
+      </div>
     </div>
-
-
-
   </body>
 </html>
